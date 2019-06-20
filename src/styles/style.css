@@ -1,0 +1,206 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px 10px 25px;
+    line-height: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.home {
+    font-size: 20px;
+}
+
+.cicon {
+    color: black;
+    width: 20px;
+}
+
+.home .cicon {
+    width: 32px;
+}
+
+.coupon {
+    width: 20px;
+    margin-right: 13px;
+    margin-top: -1px;
+}
+
+.fs {
+    display: inline-block;
+    width: 100px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.nav {
+    font-size: 20px;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    border-bottom: solid 1px #ccc;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+.blurb {
+    line-height: 1.7;
+    color: #777;
+}
+
+.form-box {
+    max-width: 300px;
+}
+
+.transfer {
+    color: #ff9900;
+}
+
+.account {
+    color: forestgreen;
+}
+
+.pool {
+    color: dodgerblue;
+}
+
+.verification {
+    color: mediumpurple;
+}
+
+.coupon {
+    color: palevioletred;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.error {
+    margin-top: 25px;
+    color: red;
+}
+
+.value {
+    margin-left: 10px;
+}
+
+.value-help {
+    color: #cccccc;
+}
+
+.info {
+    margin: 0px 0px 15px 0px;
+    color: darkorange;
+}
+
+.description {
+    padding-left: 0px;
+    margin: 10px 0px 15px 0px;
+    color: #333;
+}
+
+.social {
+    color: #777;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.form-bar {
+    float: right;
+}
+
+.submit {
+    margin: 0px 15px;
+}
+
+.cancel-link {
+}
+
+.item-quantity {
+    color: #777;
+}
+
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: darkslateblue;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 300px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
